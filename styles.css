@@ -2,28 +2,49 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .parent {
   background: grey;
-  height: 300px;
-  width: 600px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-bottom: 5rem;
 }
 
 .child {
-  height: 50%;
-  width: 50%;
+  height: 30%;
+  width: 80%;
   background-color: black;
 }
 
 .colors {
   position: absolute;
-  bottom: 0;
+  bottom: 20%;
+}
+
+@media (min-width: 25rem) {
+  .child {
+    height: 40%;
+  }
+}
+
+@media (min-width: 60rem) {
+  .child {
+    height: 50%;
+    max-width: 70%;
+  }
 }
