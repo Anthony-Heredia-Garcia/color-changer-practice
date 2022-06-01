@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.parent {
+  background: grey;
+  height: 300px;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.child {
+  height: 50%;
+  width: 50%;
+  background-color: black;
+}
+
+.colors {
+  position: absolute;
+  bottom: 0;
+}
